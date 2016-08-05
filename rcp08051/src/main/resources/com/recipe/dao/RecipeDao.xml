@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.recipe.dao.RecipeDao">
+	
+	<resultMap type="recipe" id="recipeMap">
+		<id column="rcpno" property="recipeNo" />
+		<result column="uno" property="userNo" />
+		<result column="name" property="recipeName" />
+		<result column="intro" property="intro" />
+		<result column="c_time" property="cookTime" />
+		<result column="ptn" property="portion" />
+		<result column="rcp_dt" property="recipeDate" />
+		<result column="hits" property="hits" />
+		<result column="rgst" property="regiStatus" />
+		<result column="gpa" property="gradePoint" />
+	</resultMap>
+	
+	
+	
+	
+	<select id="selectList" resultMap="recipeMap" parameterType="Map">
+	SELECT r.rcpno, r.uno, r.name, r.intro, r.c_time, r.ptn, r.rcp_dt, r.hits, r.rgst, r.gpa, u.uno, u.name
+FROM rcps r, users u
+WHERE r.uno = u.uno
+order by rcpno
+limit #{startIndex},#{len}
+	</select>
+	<!-- 
+	<select id="selectOne" resultMap="boardMap" parameterType="int">
+    select bno, title, content, cre_dt, view_cnt  
+    from boards
+    where bno=#{value}
+  </select>
+	
+	<insert id="insert" parameterType="board">
+	 insert into boards(title, content, cre_dt)
+	 values(#{title}, #{content}, now())
+	</insert>
+	
+	<update id="update" parameterType="board">
+   update boards set
+    title=#{title},
+    content=#{content},
+    cre_dt=now()
+   where bno=#{no}
+  </update>
+  
+  <delete id="delete" parameterType="int">
+    delete from boards
+    where bno=#{no}
+  </delete> -->
+  
+</mapper>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> New Document </title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<style type="text/css">
+    html,body {margin:0;padding:0;font-size:20px;color:#fff;text-align:center;}
+</style>
+<script type="text/javascript">
+    (function($){
+        $.aniPage=function(e,type){
+            if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){
+                $(".contInner").animate({
+                    scrollTop:$(window).scrollTop()-$(window).height()
+                },800,function(){
+                        $.aniOk = 0;
+                });
+            }else{
+                $("body, html").animate({
+                    scrollTop:$(window).scrollTop()+$(window).height()
+                },800,function(){
+                        $.aniOk = 0;
+                });
+            }
+        };
+    })(jQuery);
+    $(function(){
+        $(".contInner").height($(window).height());
+        $.aniOk=0;
+        $(window).scrollTop(0);
+    });
+    $(document).on("mousewheel DOMMouseScroll",function(e){
+        e.preventDefault();
+        if($.aniOk == 0){
+            $.aniPage(e,e.type);
+            $.aniOk = 1;
+        }
+    });
+</script>
+</head>
+<body>
+ 
+ 
+<div id="wrap">
+    <div class="contInner" style="background-color:#339966">1
+      
+<div class="fff1">dfdfdff</div>
+<div class="fff2">dfdfdff</div>
+<div class="fff3">dfdfdff</div>
+<div class="fff4">dfdfdff</div>
+    </div>
+    <div class="contInner" style="background-color:#663366">2</div>
+    <div class="contInner" style="background-color:#CC0066">3</div>
+    <div class="contInner" style="background-color:#3366FF">4</div>
+</div>
+ 
+ 
+</body>
+</html>

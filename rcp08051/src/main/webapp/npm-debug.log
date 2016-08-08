@@ -1,0 +1,326 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose readDependencies loading dependencies from C:\Users\BitCamp\git\Recipe\rcp08051\src\main\webapp\package.json
+5 warn package.json webapp@1.0.0 No repository field.
+6 verbose install where, deps [ 'C:\\Users\\BitCamp\\git\\Recipe\\rcp08051\\src\\main\\webapp',
+6 verbose install   [ 'bootstrap', 'jquery', 'jquery-ui-1.12.0' ] ]
+7 verbose install where, peers [ 'C:\\Users\\BitCamp\\git\\Recipe\\rcp08051\\src\\main\\webapp',
+7 verbose install   [] ]
+8 verbose installManyTop reading for lifecycle C:\Users\BitCamp\git\Recipe\rcp08051\src\main\webapp\package.json
+9 info preinstall webapp@1.0.0
+10 verbose readDependencies loading dependencies from C:\Users\BitCamp\git\Recipe\rcp08051\src\main\webapp\package.json
+11 silly cache add args [ 'bootstrap@^3.3.7', null ]
+12 verbose cache add spec bootstrap@^3.3.7
+13 silly cache add args [ 'jquery@^3.1.0', null ]
+14 verbose cache add spec jquery@^3.1.0
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'bootstrap@^3.3.7',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'bootstrap',
+15 silly cache add   rawSpec: '^3.3.7',
+15 silly cache add   spec: '>=3.3.7 <4.0.0',
+15 silly cache add   type: 'range' }
+16 silly addNamed bootstrap@>=3.3.7 <4.0.0
+17 verbose addNamed ">=3.3.7 <4.0.0" is a valid semver range for bootstrap
+18 silly addNameRange { name: 'bootstrap', range: '>=3.3.7 <4.0.0', hasData: false }
+19 silly mapToRegistry name bootstrap
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'bootstrap',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   name: 'bootstrap',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+24 verbose addNameRange registry:https://registry.npmjs.org/bootstrap not in flight; fetching
+25 silly cache add parsed spec Result {
+25 silly cache add   raw: 'jquery@^3.1.0',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'jquery',
+25 silly cache add   rawSpec: '^3.1.0',
+25 silly cache add   spec: '>=3.1.0 <4.0.0',
+25 silly cache add   type: 'range' }
+26 silly addNamed jquery@>=3.1.0 <4.0.0
+27 verbose addNamed ">=3.1.0 <4.0.0" is a valid semver range for jquery
+28 silly addNameRange { name: 'jquery', range: '>=3.1.0 <4.0.0', hasData: false }
+29 silly mapToRegistry name jquery
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'jquery',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   name: 'jquery',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/jquery
+34 verbose addNameRange registry:https://registry.npmjs.org/jquery not in flight; fetching
+35 silly cache add args [ 'jquery-ui-1.12.0@^1.12.0', null ]
+36 verbose cache add spec jquery-ui-1.12.0@^1.12.0
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'jquery-ui-1.12.0@^1.12.0',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'jquery-ui-1.12.0',
+37 silly cache add   rawSpec: '^1.12.0',
+37 silly cache add   spec: '>=1.12.0 <2.0.0',
+37 silly cache add   type: 'range' }
+38 silly addNamed jquery-ui-1.12.0@>=1.12.0 <2.0.0
+39 verbose addNamed ">=1.12.0 <2.0.0" is a valid semver range for jquery-ui-1.12.0
+40 silly addNameRange { name: 'jquery-ui-1.12.0',
+40 silly addNameRange   range: '>=1.12.0 <2.0.0',
+40 silly addNameRange   hasData: false }
+41 silly mapToRegistry name jquery-ui-1.12.0
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry data Result {
+44 silly mapToRegistry   raw: 'jquery-ui-1.12.0',
+44 silly mapToRegistry   scope: null,
+44 silly mapToRegistry   name: 'jquery-ui-1.12.0',
+44 silly mapToRegistry   rawSpec: '',
+44 silly mapToRegistry   spec: 'latest',
+44 silly mapToRegistry   type: 'tag' }
+45 silly mapToRegistry uri https://registry.npmjs.org/jquery-ui-1.12.0
+46 verbose addNameRange registry:https://registry.npmjs.org/jquery-ui-1.12.0 not in flight; fetching
+47 verbose request uri https://registry.npmjs.org/jquery-ui-1.12.0
+48 verbose request no auth needed
+49 info attempt registry request try #1 at 17:40:12
+50 verbose request id 07698eb107b67209
+51 http request GET https://registry.npmjs.org/jquery-ui-1.12.0
+52 verbose request uri https://registry.npmjs.org/jquery
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 17:40:12
+55 verbose etag "EKL6R6CS9DA9UZMD3TQMLLYOF"
+56 http request GET https://registry.npmjs.org/jquery
+57 verbose request uri https://registry.npmjs.org/bootstrap
+58 verbose request no auth needed
+59 info attempt registry request try #1 at 17:40:12
+60 verbose etag "4HTTUXKGSVAH22OSVXLXG14PS"
+61 http request GET https://registry.npmjs.org/bootstrap
+62 http 200 https://registry.npmjs.org/jquery
+63 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+63 verbose headers   etag: '"AF20MVFOKPUVX9M82B25Y7SQ0"',
+63 verbose headers   'content-type': 'application/json',
+63 verbose headers   'content-encoding': 'gzip',
+63 verbose headers   'cache-control': 'max-age=300',
+63 verbose headers   'content-length': '11274',
+63 verbose headers   'accept-ranges': 'bytes',
+63 verbose headers   date: 'Mon, 08 Aug 2016 08:40:10 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   age: '66',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-nrt6131-NRT',
+63 verbose headers   'x-cache': 'HIT',
+63 verbose headers   'x-cache-hits': '1',
+63 verbose headers   'x-timer': 'S1470645610.306364,VS0,VE0',
+63 verbose headers   vary: 'Accept-Encoding' }
+64 silly get cb [ 200,
+64 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+64 silly get     etag: '"AF20MVFOKPUVX9M82B25Y7SQ0"',
+64 silly get     'content-type': 'application/json',
+64 silly get     'content-encoding': 'gzip',
+64 silly get     'cache-control': 'max-age=300',
+64 silly get     'content-length': '11274',
+64 silly get     'accept-ranges': 'bytes',
+64 silly get     date: 'Mon, 08 Aug 2016 08:40:10 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     age: '66',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-nrt6131-NRT',
+64 silly get     'x-cache': 'HIT',
+64 silly get     'x-cache-hits': '1',
+64 silly get     'x-timer': 'S1470645610.306364,VS0,VE0',
+64 silly get     vary: 'Accept-Encoding' } ]
+65 verbose get saving jquery to C:\Users\BitCamp\AppData\Roaming\npm-cache\registry.npmjs.org\jquery\.cache.json
+66 verbose correctMkdir C:\Users\BitCamp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+67 silly addNameRange number 2 { name: 'jquery', range: '>=3.1.0 <4.0.0', hasData: true }
+68 silly addNameRange versions [ 'jquery',
+68 silly addNameRange   [ '1.5.1',
+68 silly addNameRange     '1.6.2',
+68 silly addNameRange     '1.6.3',
+68 silly addNameRange     '1.7.2',
+68 silly addNameRange     '1.7.3',
+68 silly addNameRange     '1.8.2',
+68 silly addNameRange     '1.8.3',
+68 silly addNameRange     '2.1.0-beta2',
+68 silly addNameRange     '2.1.0-beta3',
+68 silly addNameRange     '1.11.0-beta3',
+68 silly addNameRange     '1.11.0-rc1',
+68 silly addNameRange     '2.1.0-rc1',
+68 silly addNameRange     '1.11.0',
+68 silly addNameRange     '2.1.0',
+68 silly addNameRange     '2.1.1-beta1',
+68 silly addNameRange     '1.11.1-beta1',
+68 silly addNameRange     '2.1.1-rc1',
+68 silly addNameRange     '1.11.1-rc1',
+68 silly addNameRange     '2.1.1-rc2',
+68 silly addNameRange     '1.11.1-rc2',
+68 silly addNameRange     '2.1.1',
+68 silly addNameRange     '1.11.1',
+68 silly addNameRange     '1.9.1',
+68 silly addNameRange     '2.1.2',
+68 silly addNameRange     '1.11.2',
+68 silly addNameRange     '2.1.3',
+68 silly addNameRange     '2.1.4',
+68 silly addNameRange     '1.11.3',
+68 silly addNameRange     '3.0.0-alpha1',
+68 silly addNameRange     '1.12.0',
+68 silly addNameRange     '2.2.0',
+68 silly addNameRange     '3.0.0-beta1',
+68 silly addNameRange     '1.12.1',
+68 silly addNameRange     '2.2.1',
+68 silly addNameRange     '1.12.2',
+68 silly addNameRange     '2.2.2',
+68 silly addNameRange     '1.12.3',
+68 silly addNameRange     '2.2.3',
+68 silly addNameRange     '1.12.4',
+68 silly addNameRange     '2.2.4',
+68 silly addNameRange     '3.0.0-rc1',
+68 silly addNameRange     '3.0.0',
+68 silly addNameRange     '3.1.0' ] ]
+69 silly addNamed jquery@3.1.0
+70 verbose addNamed "3.1.0" is a plain semver version for jquery
+71 silly cache afterAdd jquery@3.1.0
+72 verbose afterAdd C:\Users\BitCamp\AppData\Roaming\npm-cache\jquery\3.1.0\package\package.json not in flight; writing
+73 verbose correctMkdir C:\Users\BitCamp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+74 verbose afterAdd C:\Users\BitCamp\AppData\Roaming\npm-cache\jquery\3.1.0\package\package.json written
+75 http 200 https://registry.npmjs.org/bootstrap
+76 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+76 verbose headers   etag: '"AO526QZVUTWXNZLWEA31R7S8S"',
+76 verbose headers   'content-type': 'application/json',
+76 verbose headers   'content-encoding': 'gzip',
+76 verbose headers   'cache-control': 'max-age=300',
+76 verbose headers   'content-length': '9677',
+76 verbose headers   'accept-ranges': 'bytes',
+76 verbose headers   date: 'Mon, 08 Aug 2016 08:40:10 GMT',
+76 verbose headers   via: '1.1 varnish',
+76 verbose headers   age: '251',
+76 verbose headers   connection: 'keep-alive',
+76 verbose headers   'x-served-by': 'cache-nrt6120-NRT',
+76 verbose headers   'x-cache': 'HIT',
+76 verbose headers   'x-cache-hits': '2',
+76 verbose headers   'x-timer': 'S1470645610.414695,VS0,VE0',
+76 verbose headers   vary: 'Accept-Encoding' }
+77 silly get cb [ 200,
+77 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+77 silly get     etag: '"AO526QZVUTWXNZLWEA31R7S8S"',
+77 silly get     'content-type': 'application/json',
+77 silly get     'content-encoding': 'gzip',
+77 silly get     'cache-control': 'max-age=300',
+77 silly get     'content-length': '9677',
+77 silly get     'accept-ranges': 'bytes',
+77 silly get     date: 'Mon, 08 Aug 2016 08:40:10 GMT',
+77 silly get     via: '1.1 varnish',
+77 silly get     age: '251',
+77 silly get     connection: 'keep-alive',
+77 silly get     'x-served-by': 'cache-nrt6120-NRT',
+77 silly get     'x-cache': 'HIT',
+77 silly get     'x-cache-hits': '2',
+77 silly get     'x-timer': 'S1470645610.414695,VS0,VE0',
+77 silly get     vary: 'Accept-Encoding' } ]
+78 verbose get saving bootstrap to C:\Users\BitCamp\AppData\Roaming\npm-cache\registry.npmjs.org\bootstrap\.cache.json
+79 verbose correctMkdir C:\Users\BitCamp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+80 silly addNameRange number 2 { name: 'bootstrap', range: '>=3.3.7 <4.0.0', hasData: true }
+81 silly addNameRange versions [ 'bootstrap',
+81 silly addNameRange   [ '0.0.1',
+81 silly addNameRange     '0.0.2',
+81 silly addNameRange     '3.1.1',
+81 silly addNameRange     '3.2.0',
+81 silly addNameRange     '3.3.0',
+81 silly addNameRange     '3.3.1',
+81 silly addNameRange     '3.3.2',
+81 silly addNameRange     '3.3.4',
+81 silly addNameRange     '3.3.5',
+81 silly addNameRange     '3.3.6',
+81 silly addNameRange     '4.0.0-alpha.2',
+81 silly addNameRange     '3.3.7',
+81 silly addNameRange     '4.0.0-alpha.3' ] ]
+82 silly addNamed bootstrap@3.3.7
+83 verbose addNamed "3.3.7" is a plain semver version for bootstrap
+84 silly mapToRegistry name bootstrap
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'bootstrap',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   name: 'bootstrap',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+89 verbose addRemoteTarball https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz not in flight; adding
+90 verbose addRemoteTarball [ 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz',
+90 verbose addRemoteTarball   '5a389394549f23330875a3b150656574f8a9eb71' ]
+91 info retry fetch attempt 1 at 17:40:12
+92 info attempt registry request try #1 at 17:40:12
+93 http fetch GET https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz
+94 http 404 https://registry.npmjs.org/jquery-ui-1.12.0
+95 verbose headers { 'content-type': 'application/json',
+95 verbose headers   'cache-control': 'max-age=0',
+95 verbose headers   'content-length': '2',
+95 verbose headers   'accept-ranges': 'bytes',
+95 verbose headers   date: 'Mon, 08 Aug 2016 08:40:10 GMT',
+95 verbose headers   via: '1.1 varnish',
+95 verbose headers   age: '0',
+95 verbose headers   connection: 'keep-alive',
+95 verbose headers   'x-served-by': 'cache-nrt6133-NRT',
+95 verbose headers   'x-cache': 'MISS',
+95 verbose headers   'x-cache-hits': '0',
+95 verbose headers   'x-timer': 'S1470645610.306423,VS0,VE164',
+95 verbose headers   vary: 'Accept-Encoding' }
+96 silly get cb [ 404,
+96 silly get   { 'content-type': 'application/json',
+96 silly get     'cache-control': 'max-age=0',
+96 silly get     'content-length': '2',
+96 silly get     'accept-ranges': 'bytes',
+96 silly get     date: 'Mon, 08 Aug 2016 08:40:10 GMT',
+96 silly get     via: '1.1 varnish',
+96 silly get     age: '0',
+96 silly get     connection: 'keep-alive',
+96 silly get     'x-served-by': 'cache-nrt6133-NRT',
+96 silly get     'x-cache': 'MISS',
+96 silly get     'x-cache-hits': '0',
+96 silly get     'x-timer': 'S1470645610.306423,VS0,VE164',
+96 silly get     vary: 'Accept-Encoding' } ]
+97 http fetch 200 https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz
+98 silly fetchAndShaCheck shasum 5a389394549f23330875a3b150656574f8a9eb71
+99 verbose addTmpTarball C:\Users\BitCamp\AppData\Local\Temp\npm-6920-086f562b\registry.npmjs.org\bootstrap\-\bootstrap-3.3.7.tgz not in flight; adding
+100 verbose addTmpTarball already have metadata; skipping unpack for bootstrap@3.3.7
+101 verbose correctMkdir C:\Users\BitCamp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+102 silly cache afterAdd bootstrap@3.3.7
+103 verbose afterAdd C:\Users\BitCamp\AppData\Roaming\npm-cache\bootstrap\3.3.7\package\package.json not in flight; writing
+104 verbose correctMkdir C:\Users\BitCamp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+105 verbose afterAdd C:\Users\BitCamp\AppData\Roaming\npm-cache\bootstrap\3.3.7\package\package.json written
+106 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/jquery-ui-1.12.0
+106 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+106 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+106 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+106 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+106 verbose stack     at emitTwo (events.js:87:13)
+106 verbose stack     at Request.emit (events.js:172:7)
+106 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+106 verbose stack     at emitOne (events.js:82:20)
+106 verbose stack     at Request.emit (events.js:169:7)
+106 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+107 verbose statusCode 404
+108 verbose pkgid jquery-ui-1.12.0
+109 verbose cwd C:\Users\BitCamp\git\Recipe\rcp08051\src\main\webapp
+110 error Windows_NT 6.1.7601
+111 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+112 error node v4.4.7
+113 error npm  v2.15.8
+114 error code E404
+115 error 404 Registry returned 404 for GET on https://registry.npmjs.org/jquery-ui-1.12.0
+115 error 404
+115 error 404 'jquery-ui-1.12.0' is not in the npm registry.
+115 error 404 You should bug the author to publish it (or use the name yourself!)
+115 error 404 It was specified as a dependency of 'webapp'
+115 error 404
+115 error 404 Note that you can also install from a
+115 error 404 tarball, folder, http url, or git url.
+116 verbose exit [ 1, true ]

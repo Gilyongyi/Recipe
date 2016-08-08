@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.recipe.dao.RecipeDao">
+
+	<resultMap type="recipe" id="recipeMap">
+		<id column="rcpno" property="recipeNo" />
+		<result column="user.name" property="userName"/>
+		<result column="uno" property="userNo" />
+		<result column="name" property="recipeName" />
+		<result column="intro" property="intro" />
+		<result column="c_time" property="cookTime" />
+		<result column="ptn" property="portion" />
+		<result column="rcp_dt" property="recipeDate" />
+		<result column="hits" property="hits" />
+		<result column="rgst" property="regiStatus" />
+		<result column="gpa" property="gradePoint" />
+	</resultMap>
+
+
+
+
+	<select id="selectList" resultMap="recipeMap" parameterType="Map">
+		select * from users u1,rcps r1
+		where r1.uno=u1.uno
+		order by rcpno
+		limit #{startIndex},#{len}
+	</select>
+	
+	<insert id="insert" parameterType="recipe">
+	 INSERT INTO RCPS(name,uno,intro,c_time,ptn,rcp_dt,rgst)
+	 Values(#{recipeName},#{userNo}#{intro},#{cookTime},#{portion},now(),"1")
+	</insert>
+  <!--regiStatus 1=저장 2=임시저장  -->
+</mapper>
